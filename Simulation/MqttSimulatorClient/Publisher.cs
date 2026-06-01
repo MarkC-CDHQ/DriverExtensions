@@ -28,7 +28,7 @@ namespace MqttSimulatorClient
             // Create TCP based options using the builder.
             var options = new MqttClientOptionsBuilder()
                 .WithClientId("producer_{268EEB35-2130-49AA-A757-E4D2B05B5D71}")
-                .WithTcpServer("172.16.0.122", 1883)
+                .WithTcpServer("127.0.0.1", 1883)
                 .WithCleanSession()
                 .Build();
 
