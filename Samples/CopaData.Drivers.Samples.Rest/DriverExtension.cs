@@ -16,7 +16,7 @@ namespace CopaData.Drivers.Samples.Rest
 
         public DriverExtension()
         {
-            _restClient = new RestClient("https://localhost:44301/");
+            _restClient = new RestClient("http://localhost:5000/");
             _subscriptions = new List<string>();
         }
 
