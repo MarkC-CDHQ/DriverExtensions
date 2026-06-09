@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup Label="Globals">
     <SccProjectName>SAK</SccProjectName>
@@ -20,7 +20,7 @@
 		<When Condition="Exists('$(registry:HKEY_LOCAL_MACHINE\SOFTWARE\COPA-DATA\DataDir@ProgramDir32_16000)')">
 			<ItemGroup>
 				<Reference Include="CopaData.Drivers.Contracts">
-					<HintPath>$(registry:HKEY_LOCAL_MACHINE\SOFTWARE\COPA-DATA\DataDir@ProgramDir32_11000)DriverFramework\CopaData.Drivers.Contracts.dll</HintPath>
+					<HintPath>$(registry:HKEY_LOCAL_MACHINE\SOFTWARE\COPA-DATA\DataDir@ProgramDir32_16000)DriverFramework\CopaData.Drivers.Contracts.dll</HintPath>
 				</Reference>
 			</ItemGroup>
 		</When>
